@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48">
+  <title>Tinybird Data - Dashboard</title>
+  <link rel="stylesheet" href="./styles.css"></link>
+
+</head>
+<body>
+  <h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" width="24" height="24"><path fill="currentColor" d="M4.667 10.667a1 1 0 0 0 1-1 .5.5 0 0 0 0-.1l1.86-1.86h.306L8.907 8.78v.053a1 1 0 1 0 2 0V8.78l2.426-2.447a1 1 0 1 0-1-1 .5.5 0 0 0 0 .1L9.927 7.84H9.82L8.667 6.667a1 1 0 0 0-2 0l-2 2a1 1 0 1 0 0 2m9 2.666H2.333V2A.667.667 0 1 0 1 2v12a.667.667 0 0 0 .667.667h12a.667.667 0 0 0 0-1.334"></path></svg>
+    Tinybird Data - Dashboard
+  </h1>
+  
+  <div id="filter-container">
+    <label for="categoryFilter">Filter by Category: </label>
+    <select id="categoryFilter"></select>
+  </div>
+  
+  <div class="divider"></div>
+
+  <div id="chart-layer">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <div id="table-layer">
+    <table id="stringTable">
+        <thead id="table-head"></thead>
+        <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+ 
+  <script src="app.bundle.js"></script>
+</body>
+</html>
